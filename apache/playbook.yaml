@@ -1,0 +1,9 @@
+--- 
+- 
+  hosts: servers
+  tasks: 
+    - 
+      name: "Install {{ package }}"
+      yum: "name={{ package }} state=latest"
+  vars: 
+    package: git
